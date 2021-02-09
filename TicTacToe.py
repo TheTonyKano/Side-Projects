@@ -1,6 +1,5 @@
 import random
 
-
 def boardType(opponentType):
     board = {}
     if opponentType == "Computer" or opponentType == "computer":
@@ -9,13 +8,11 @@ def boardType(opponentType):
         board = {1 : 1, 2 : 2, 3 : 3, 4 : 4, 5 : 5, 6 : 6, 7 : 7, 8 : 8, 9 : 9}
     return board
 
-
 def StartGame():
     print("\n" * 100)
     opponentType = input("Do you want to face a computer or local PvP? (Computer or PvP)")
     board = boardType(opponentType)
     GameStateCheckEnemy(board, opponentType)
-
 
 def DisplayBoard(board):
     print("\n" * 98)
@@ -35,7 +32,6 @@ def DisplayBoard(board):
     print("|       |       |       |")
     print("+-------+-------+-------+")
     
-
 def UserInput(board, opponentType):
     startingChar = ""
     while True:
@@ -61,8 +57,7 @@ def UserInput(board, opponentType):
             UserInput(board, opponentType)
             break
     GameStateCheckUser(board, opponentType)
-    
-    
+        
 def EOGPrompt():
     restartInput = str(input("Do you wish to continue?"))
     print("\n" * 100)
