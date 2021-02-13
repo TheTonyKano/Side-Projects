@@ -8,8 +8,8 @@ context = ssl.create_default_context()
 sender_email = "thetonykano.do.not.reply@gmail.com"
 password = getpass("Please enter your password: ")
 smtp_server = "smtp.gmail.com"
-receiver_email = 'prettyfosie@yahoo.com'
-subject = "Hey Guys! Guess what happened?"
+receiver_email = input("Please enter receiver's email: ")
+subject = input("Please enter the subject:")
 
 message = MIMEMultipart("alternative")
 message["Subject"] = subject
