@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 
 context = ssl.create_default_context()
 sender_email = "thetonykano.do.not.reply@gmail.com"
-password = "Kazuma320!" #getpass("Please enter your password: ")
+password = getpass("Please enter your password: ")
 smtp_server = "smtp.gmail.com"
 receiver_email = 'prettyfosie@yahoo.com'
 subject = "Hey Guys! Guess what happened?"
@@ -31,7 +31,7 @@ html = """\
     <body>
         <p>
             Hi,<br><br>
-            Piercing Nipples or Septum?<br><br>
+            How are you?<br><br>
             Sincerely,<br>
             TheTonyKano <br>
             Twitch <a href="twitch.tv/TheTonyKano" target="_blank">TheTonyKano</a>
